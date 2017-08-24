@@ -17,7 +17,6 @@ public class UserDao extends BaseDao {
         final User user = new User();
         String sql ="select id ,name,age from user where id=?";
         jdbcTemplate.query(sql, new Object[]{id}, new RowCallbackHandler() {
-            @Override
             public void processRow(ResultSet rs) throws SQLException {
                 user.setId(rs.getInt("id"));
                 user.setName(rs.getString("name"));
