@@ -1,9 +1,9 @@
 package transaction.service;
 
-import transaction.dao.UserDao;
-import transaction.module.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import transaction.dao.UserDao;
+import transaction.module.User;
 
 /**
  * Created by jd on 2016/06/08.
